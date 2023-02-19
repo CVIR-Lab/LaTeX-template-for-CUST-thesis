@@ -1,0 +1,42 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass[degree=master, degree-type=professional]{custhesis}
+% degree      = doctor | master | bachelor
+% degree-type = academic（学硕、博） | professional（专硕、博）
+% language    = chinese | english
+% fontset     = windows | mac | ubuntu | fandol
+
+% 加载宏包、全部的配置
+\input{custsetup.tex}
+
+
+\begin{document}
+
+\maketitle
+\copyrightpage
+\frontmatter
+\input{chapters/摘要.tex}
+\tableofcontents
+% \listoffigures
+% \listoftables
+\input{chapters/说明.tex}%图表符号等说明
+
+\mainmatter%正文各章节信息
+\input{chapters/第一章.tex}
+\input{chapters/第二章.tex}
+\input{chapters/第三章.tex}
+\input{chapters/第四章.tex}
+
+\bibliography{bib/cust}  % 参考文献使用 BibTeX 编译
+% \printbibliography       % 参考文献使用 BibLaTeX 编译
+
+\appendix
+\input{chapters/附录.tex}
+
+\backmatter
+\input{chapters/致谢.tex}
+\input{chapters/发表论文.tex}%本科生不需要
+
+\end{document}
