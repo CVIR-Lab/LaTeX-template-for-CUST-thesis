@@ -2316,7 +2316,7 @@ for the degree of \par
   %
 %4级节标题的格式使用宋体小四号即12磅加粗，左缩进两字，行距 20 磅，段前段后 0 磅，序号与题名间空半字宽。
   paragraph = {
-    format     = \rmfamily\fontsize{12bp}{20bp}\selectfont,
+    format     = \rmfamily\songti\fontsize{12bp}{20bp}\selectfont,
     number     = \arabic{paragraph}）, 
     aftername  = \hspace{0.5\ccwd},
     indent     = 2\ccwd,
@@ -2327,7 +2327,7 @@ for the degree of \par
 % 按照 Word 模板的格式，五级节标题：宋体 12 磅，左缩进两字，行距 20 磅，
   % 段前段后 0 磅，序号使用全宽括号，与题名间空半字宽。
   subparagraph = {
-    format     = \rmfamily\fontsize{12bp}{20bp}\selectfont,
+    format     = \rmfamily\songti\fontsize{12bp}{20bp}\selectfont,
     number     = (\arabic{paragraph}),
     aftername  = \hspace{0.5\ccwd},
     indent     = 2\ccwd,
