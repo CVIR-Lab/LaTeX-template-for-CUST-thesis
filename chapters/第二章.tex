@@ -1,0 +1,69 @@
+% !TeX root = ../main.tex
+
+\chapter{表、图、算法}
+
+\section{表的绘制}
+按照《研究生规范》和《本科生规范》推荐，一般常用三线表，如表~\ref{tab:exampletable}所示。
+\begin{table}[htbp]
+  \centering
+  \caption{表号和表题在表的正上方}
+  \label{tab:exampletable}
+  \begin{tabular}{cl}
+    \toprule
+    类型   & 描述                                       \\
+    \midrule
+    表的编排 & 一般项目由左至右横排，数据依序竖排 \\
+    表的参数 & 参数应标明量和单位等   \\
+    表的引用 & 根据表的label信息，采用ref进行引用       \\
+    \bottomrule
+  \end{tabular}
+  \note{注：表注分两种，第一种是对全表的注释，用不加阿拉伯数字排在表的下边，
+    前面加“注：”；第二种是和表内的某处文字或数字相呼应的注，
+    在表里面用带圈的阿拉伯数字在右上角标出，然后在表下面用同样的圈码注出来}
+\end{table}
+
+表题由表序和表名组成。表序一般按照章排表，如第1章第一个表的序号为："表1.1"，以此类推。表序与表名之间空一格，表名中不允许使用标点符号。表题后不加标点。表题置于表上，居中排列，表题与表格内容均采用宋体五号字。
+
+
+
+\section{插图}
+
+可能听说“\LaTeX{} 只能使用 eps 格式的图片”，甚至把 jpg 格式转为eps。事实上，这种做法已无必要，当然不赞成也不反对这种转换。但是eps每次编译时都要要调用外部工具进行解析，会导致降低编译速度。所以推荐矢量图直接使用 pdf 格式，位图使用 jpeg 或 png 格式。
+
+pdf格式比较容易生成，adobe reader就可以，adobe illustrator也能生成。当然这些软件也都可以生成eps。
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{cust-name.pdf}
+  \caption{图号、图题置于图的下方}
+  \label{fig:badge}
+  \note{注：图注的内容不宜放到图题中。}
+\end{figure}
+
+关于图片的并排，推荐使用较新的 \pkg{subcaption} 宏包，
+不建议使用 \pkg{subfigure} 或 \pkg{subfig} 等宏包。
+
+
+
+\section{算法环境}
+
+模板中使用 \pkg{algorithm2e} 宏包实现算法环境。关于该宏包的具体用法，请阅读宏包的官方文档。
+\begin{algorithm}[htbp]
+  \SetAlgoLined
+  \KwData{this text}
+  \KwResult{how to write algorithm with \LaTeX2e }
+
+  initialization\;
+  \While{not at end of this document}{
+    read current\;
+    \eIf{understand}{
+      go to next section\;
+      current section becomes this one\;
+    }{
+      go back to the beginning of current section\;
+    }
+  }
+  \caption{算法示例1}
+  \label{algo:algorithm1}
+\end{algorithm}
+
+注意，虽然可以在论文中插入算法，但是插入大段的代码有凑字数的嫌疑，可以放在放在附录中。当然也不绝对，必要情况下有的同学选择这么做，对于这些同学，建议用 \pkg{listings} 宏包。
