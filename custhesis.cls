@@ -1577,10 +1577,10 @@
   \else
     %
     % 本科生要求除封面、扉页外，每面上部加页眉，
-    % 用小 5 号字（9 bp）标注“长春理工大学本科毕业论文”，居中；
-    % 从目录页开始在每面底部居中用小五宋体（9 bp）连续编页码。
-    \def\cust@hf@font{\fontsize{9bp}{12bp}\selectfont}
-    \fancyhead[C]{\cust@hf@font 长春理工大学本科毕业论文}%
+    % 用小 5 号字（9 bp）标注“长春理工大学本科生毕业论文或长春理工大学本科生毕业设计”，居中；
+    % 从目录页开始在每面底部居中用宋体10.5磅（五号字）连续编页码。
+    \def\cust@hf@font{\fontsize{10.5bp}{12bp}\selectfont}
+    \fancyhead[C]{\cust@hf@font 长春理工大学\cust@thesis@name}%
     \fancyfoot[C]{\cust@hf@font\thepage}%
     \let\@mkboth\@gobbletwo
     \let\chaptermark\@gobble
