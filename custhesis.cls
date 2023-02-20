@@ -1577,7 +1577,7 @@
   \else
     %
     % 本科生要求除封面、扉页外，每面上部加页眉，
-    % 用小 5 号字（9 bp）标注“长春理工大学本科生毕业论文或长春理工大学本科生毕业设计”，居中；
+    % 用宋体10.5磅（五号字）标注“长春理工大学本科生毕业论文或长春理工大学本科生毕业设计”，居中；
     % 从目录页开始在每面底部居中用宋体10.5磅（五号字）连续编页码。
     \def\cust@hf@font{\fontsize{10.5bp}{12bp}\selectfont}
     \fancyhead[C]{\cust@hf@font 长春理工大学\cust@thesis@name}%
@@ -1628,12 +1628,19 @@
   \fi
 }
 
-% 研究生要求“第 1 章”要另页起，但是本科生要求另面起。
+%% 研究生要求“第 1 章”要另页起，但是本科生要求另面起。
+%\renewcommand\mainmatter{%
+%  \cleardoublepage
+%  \ifcust@degree@graduate
+%    \pagenumbering{arabic}%
+%  \fi
+%  \pagestyle{plain}%
+%  \@mainmattertrue
+%}
+% 《规范》要求正文以后用阿拉伯数字编码，相当于从“第 1 章”要另页起。
 \renewcommand\mainmatter{%
   \cleardoublepage
-  \ifcust@degree@graduate
     \pagenumbering{arabic}%
-  \fi
   \pagestyle{plain}%
   \@mainmattertrue
 }
