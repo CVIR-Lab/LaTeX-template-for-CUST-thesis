@@ -1615,17 +1615,13 @@
 }
 
 %
-% 研究生要求从“中文摘要”开始页码用大写罗马数字，
-% 而本科生的 frontmatter（只有致谢）不编页码，从目录开始页码用阿拉伯数字。
+% 《规范》要求，从摘要开始编页码，
+% 而且中英文摘要，目录均独立编页码
 \renewcommand\frontmatter{%
   \cleardoublepage
   \@mainmatterfalse
   \pagenumbering{Roman}%
-  \ifcust@degree@graduate
-    \pagestyle{plain}%
-  \else
-    \pagestyle{headings}%
-  \fi
+  \pagestyle{plain}%
 }
 
 %% 研究生要求“第 1 章”要另页起，但是本科生要求另面起。
@@ -2495,14 +2491,10 @@ for the degree of \par
 
 % \subsection{目录}
 
-% 研究生规定目录另面起；
-% 本科生规定从目录开始编页码，所以必须另页起。包括正文章节（一般到三级标题）、参考文献、附录、致谢及各部分序号、名称、页码。
+% 《规范》要求目录独立采用罗马数字编页码，所以必须另页起。包括正文章节（一般到三级标题）、参考文献、附录、致谢及各部分序号、名称、页码。
 \renewcommand\tableofcontents{%
-  \ifcust@degree@bachelor
-    \cleardoublepage
-    \pagenumbering{arabic}%
-    \pagestyle{plain}%
-  \fi
+  \pagenumbering{Roman}%
+  \pagestyle{plain}%
   \cust@chapter{\contentsname}%
   \@starttoc{toc}%
 }
