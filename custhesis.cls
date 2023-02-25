@@ -2606,17 +2606,19 @@ for the degree of \par
 
 % \subsection{符号说明}
 
-% 研究生规定符号说明另页起，标题字体字号等同论文正文，
-% 《撰写手册》第 9 页 1.10(2) 还规定“符号说明不加页码”。
+% 《规范》中要求符号说明另页起，标题字体字号等同论文正文。
 \newenvironment{notation}{%
   \ifcust@degree@graduate
     \cleardoublepage
-    \pagestyle{headings}%
+    \pagenumbering{Roman}
+%    \pagestyle{headings}%没有页脚
+    \pagestyle{plain}
   \fi
   \cust@chapter{\cust@notation@name}%
 }{%
   \ifcust@degree@graduate
     \clearpage
+    \pagenumbering{Roman}
     \pagestyle{plain}%
   \fi
 }%
