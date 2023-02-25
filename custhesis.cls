@@ -3182,7 +3182,8 @@ for the degree of \par
     \null\par
     \begingroup
       \raggedleft
-      \cust@date@zh@short\par
+      \cust@date@zh@short\par%如果致谢部分不需要添加时间，可以注释掉
+      \cust@author           %如果致谢部分不需要落款名字，可以注释掉
     \endgroup
   \fi
 }
