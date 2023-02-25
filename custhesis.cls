@@ -559,8 +559,7 @@
 % 根据语言设置各章节的名称，只有在导言区设置 \option{language} 时会修改，
 % 而在正文局部切换语言时则不变。
 
-% 由于《撰写手册》中的“speciality”一词使用的是英式拼法，
-% 所以“acknowledgements”也保持一致。
+% speciality一词使用英式拼法，“acknowledgements”也保持一致。
 \newcommand\cust@set@chapter@names{%
   \ifcust@main@language@chinese
     \def\contentsname{目录}%
@@ -1888,8 +1887,8 @@
 % 研究生（博士，硕士）中文封面：
 % 密级黑体 12 磅；
 % 论文类型宋体 44 磅加粗；
-% 论文题目黑体 22 磅居中，1.25行距；
-% 作者姓名黑体 16 磅加粗，1.25行距；
+% 论文题目黑体二号 22 磅居中，1.25行距；
+% 作者姓名、指导教师、学科专业，黑体三号、16 磅加粗，1.25行距；
 % 注意这里的“1.25行距”的地方开启了“对齐到网格”，所以实际行距有所偏差，
 % 所以只能使用直尺测量。
 \newcommand\cust@speciality@sse{信息对抗技术}
@@ -1926,11 +1925,11 @@
     \vskip 0.9cm%
     %论文题目盒子，宽度为\textwidth
     \parbox[t][5.5cm][c]{\textwidth}{%
-      \centering\sffamily\bfseries\fontsize{22bp}{30bp}\selectfont
+      \centering\sffamily\heiti\bfseries\fontsize{22bp}{30bp}\selectfont
       \cust@title\par}
     \vskip 0.6cm%
     %作者信息
-    {\heiti\fontsize{16bp}{31bp}\selectfont
+    \heiti\bfseries\fontsize{16bp}{31bp}\selectfont
       \begin{tabular}{@{}l@{\hspace{\ccwd}}l@{}}%
         \textsf{研\hspace{0.2cm}究\hspace{0.2cm}生：} & \cust@author \\
         \textsf{\cust@speciality@name：} & \cust@speciality \\
@@ -1942,7 +1941,8 @@
         \fi
       \end{tabular}\par%
       \vskip 1.0cm
-      \cust@date@zh@shortbig}
+    \bfseries\fontsize{16bp}{31bp}\selectfont
+      \cust@date@zh@shortbig
   \end{titlepage}%
   \cust@reset@main@language
 }
@@ -1965,7 +1965,7 @@
     \vskip 2.5cm%
     %论文题目，宽度为\textwidth
     \parbox[t][5.5cm][c]{\textwidth}{%
-      \centering\sffamily\bfseries\fontsize{22bp}{35bp}\selectfont
+      \centering\sffamily\heiti\bfseries\fontsize{22bp}{35bp}\selectfont
       \cust@title\par}
     \vskip 0.1cm%
     %作者信息
