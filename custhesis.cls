@@ -3177,7 +3177,7 @@ for the degree of \par
   \@mainmatterfalse
   \chapter{\cust@acknowledgements@name}%
 }{
-  \ifcust@degree@bachelor
+%  \ifcust@degree@bachelor
     \par
     \null\par
     \begingroup
@@ -3185,7 +3185,7 @@ for the degree of \par
       \cust@author\par %如果致谢部分不需要落款名字，可以注释掉
       \cust@date@zh@short\par  %如果致谢部分不需要添加时间，可以注释掉
     \endgroup
-  \fi
+%  \fi
 }
 
 
