@@ -1602,9 +1602,9 @@
   \if@twoside
     \ifodd\c@page\else
       \hbox{}%
-      \ifcust@degree@graduate
+%      \ifcust@degree@graduate
         \thispagestyle{empty}%
-      \fi
+%      \fi
       \newpage
       \if@twocolumn
         \hbox{}%
@@ -2465,11 +2465,13 @@ for the degree of \par
   \custsetup{language=english}%
   \ifcust@degree@graduate
     \cust@chapter[Abstract]{ABSTRACT}%
+    \pagenumbering{Roman}%《规范》要求重新编页码
   \else
     \begingroup
       % 本科生的英文摘要使用小二号衬线体
       \ctexset{chapter/format=\centering\fontsize{18bp}{33bp}\selectfont}%
       \cust@chapter{ABSTRACT}%
+      \pagenumbering{Roman}%《规范》要求重新编页码
     \endgroup
   \fi
 }{
