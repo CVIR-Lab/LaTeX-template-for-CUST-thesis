@@ -18,6 +18,6 @@ https://github.com/CVIR-Lab/LaTeX-template-for-CUST-thesis
 ### Overleaf
 首先注册[overleaf](https://www.overleaf.com?r=29a7c6d3&rm=d&rs=b)。Overleaf支持项目上传，也可以使用模板。具体如下
 1. 上传模板。将项目clone到本地，然后上传到个人overleaf中，而后进行编辑。
-2. 在线模板。暂未上传，带字体、字号、字间距等细节修改优化在再上传。
+2. 在线模板。暂未上传，待字体、字号、字间距等细节修改优化结束后再上传。
 
 本项目会持续更新，因此建议将项目clone到本地，再上传overleaf，而不是采用overleaf Templates形式。
