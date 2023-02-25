@@ -1827,7 +1827,7 @@
   \fi
 \fi
 \ifcust@degree@type@academic
-  \newcommand\cust@speciality@name{学科专业}
+  \newcommand\cust@speciality@name{学\hspace{0.3cm}科\hspace{0.3cm}专\hspace{0.3cm}业}
 \else
   \ifcust@degree@doctor
     \renewcommand\cust@thesis@name{专业博士学位论文}
@@ -1849,7 +1849,7 @@
       \providecommand\lishu{\sffamily}
     \fi
   \fi
-  \newcommand\cust@speciality@name{类别领域}
+  \newcommand\cust@speciality@name{类\hpace{0.3cm}别\hspace{0.3cm}领\hspace{0.3cm}域}
 \fi
 %定义原创性声明文字中的硕士、博士层次等常量。
 \ifcust@degree@doctor
@@ -1897,44 +1897,44 @@
   \begin{titlepage}%
     \cust@pdfbookmark{封面}%
     \centering
-    \parbox[t][0.6cm][t]{\textwidth}{%
+    \parbox[t][0.5cm][t]{\textwidth}{%
       \raggedleft\heiti\fontsize{12bp}{12bp}\selectfont
       \textsf{学号：}\cust@underline[3cm]{\cust@student@id}
       %密级
       \null\cust@secret@level\par}\par
-    \vskip 0.5cm%
-    \includegraphics[height=3.1496cm]{figures/cust-name.pdf}\par
-    \vskip 2.3866cm%bp:磅 此为图片和论文类型间距。
+    \vskip 2.5cm%
+    \includegraphics[height=3.1499cm]{figures/cust-name.pdf}\par
+    \vskip 3.8866cm%bp:磅 此为图片和论文类型间距。
     {\sffamily\songti\fontsize{44bp}{21bp}\selectfont
       \cust@thesis@name}%\sffamily为无衬线字体
     \ifcust@degree@type@academic
-      \vskip 0.2533cm%此为论文类型与论文题目间距
+      \vskip 0.1533cm%此为论文类型与论文题目间距
     \else
-      \vskip 0.2533cm%
-      \begingroup%论文题目，22磅，黑体，1.25倍行距
-        \heiti\fontsize{22bp}{22bp}\selectfont
-        \ifx\cust@professional@type\@empty
-          \null
-        \else
-          \lishu （\cust@professional@type ）%
-        \fi
-%        \par
-      \endgroup
-%      \vskip 1.0cm%
+      \vskip 0.1533cm%
+%      \begingroup%论文题目，22磅，黑体，1.25倍行距
+%        \heiti\fontsize{22bp}{22bp}\selectfont
+%        \ifx\cust@professional@type\@empty
+%          \null
+%        \else
+%          \lishu （\cust@professional@type ）%
+%        \fi
+%%        \par
+%      \endgroup
+%%      \vskip 1.0cm%
     \fi
-    \vskip 0.9cm%
+%    \vskip 0.4cm%
     %论文题目盒子，宽度为\textwidth
     \parbox[t][5.5cm][c]{\textwidth}{%
       \centering\sffamily\heiti\bfseries\fontsize{22bp}{30bp}\selectfont
       \cust@title\par}
-    \vskip 0.6cm%
+%    \vskip 0.2cm%
     %作者信息
-    \heiti\bfseries\fontsize{16bp}{31bp}\selectfont
+    \heiti\bfseries\fontsize{16bp}{30bp}\selectfont
       \begin{tabular}{@{}l@{\hspace{\ccwd}}l@{}}%
-        \textsf{研\hspace{0.2cm}究\hspace{0.2cm}生：} & \cust@author \\
+        \textsf{研\hspace{0.7cm}究\hspace{0.7cm}生：} & \cust@author \\
         \textsf{\cust@speciality@name：} & \cust@speciality \\
         \ifx\cust@advisor\@empty
-          \textsf{指导教师：} & \cust@supervisor@names \\
+          \textsf{指\hspace{0.3cm}导\hspace{0.3cm}教\hspace{0.3cm}师：} & \cust@supervisor@names \\
         \else
           \textsf{校内导师：} & \cust@supervisor@names \\
           \textsf{企业行业导师：} & \cust@advisor@names \\
