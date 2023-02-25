@@ -7,6 +7,7 @@
 
 ### Overleaf
 首先注册[overleaf](https://www.overleaf.com?r=29a7c6d3&rm=d&rs=b)。Overleaf支持项目上传，也可以使用模板。具体如下
-1. item 1 上传模板。将项目clone到本地，然后上传到个人overleaf中，而后进行编辑。
-2. item 2 在线模板。在overleaf Templates中搜索“长春理工大学学位论文LateX模板”，选择"Open as Template"，即可进行编译。
+1. 上传模板。将项目clone到本地，然后上传到个人overleaf中，而后进行编辑。
+2. 在线模板。在overleaf Templates中搜索“长春理工大学学位论文LateX模板”，选择"Open as Template"，即可进行编译。
 
+项目会持续更新仓库，因为为确保使用最细的模板，建议将项目clone到本地，在上传overleaf。
