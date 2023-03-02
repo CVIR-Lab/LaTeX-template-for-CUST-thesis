@@ -3182,7 +3182,8 @@ for the degree of \par
     \null\par
     \begingroup
       \raggedleft
-      \cust@author\par %如果致谢部分不需要落款名字，可以注释掉
+      计算机视觉与智能机器人学实验室(\cust@author)，\par %如果致谢部分不需要落款名字，可以注释掉
+      校光电测试分析中心\par%如果致谢部分不需要落款名字，可以注释掉
       \cust@date@zh@short\par  %如果致谢部分不需要添加时间，可以注释掉
     \endgroup
 %  \fi
