@@ -337,13 +337,6 @@
     },
     default = blue,
   },
-  reviewer = {
-    choices = {
-      true,
-      false,
-    },
-    default = false,
-  },
 }
 
 % 将 \cust@cite@style 置空方便后续进行判断。
@@ -2204,12 +2197,6 @@ for the degree of \par
     \vskip 0.3cm%
     导师签名：\cust@underline{}\hspace{2.7cm}%
     \cust@underline[2cm]{}年\cust@underline[1cm]{}月\cust@underline[1cm]{}日\hspace{2.7cm}%
-    \ifcust@reviewer@true
-      \vskip 1.5cm%
-      \hskip -1em%
-      评审专家签名：\cust@underline{}\hspace{4.5em}%
-      评审专家签名：\cust@underline{}\par
-    \fi
   \end{titlepage}%
 \fi
 }
