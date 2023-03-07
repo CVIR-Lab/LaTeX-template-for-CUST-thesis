@@ -2022,7 +2022,7 @@ for the degree of \par
     \ifcust@degree@type@academic
       \begingroup
         \sffamily\bfseries\fontsize{14bp}{20bp}\selectfont
-        \ifx\cust@degree@doctor
+        \ifcust@degree@doctor
           Doctor of Philosophy
         \else
           \cust@degree@area@en
@@ -2032,7 +2032,7 @@ for the degree of \par
     \else
       \begingroup
          \sffamily\bfseries\fontsize{14bp}{20bp}\selectfont
-        \ifx\cust@degree@doctor
+        \ifcust@degree@doctor
           Professional Doctor of Philosophy of \cust@speciality@en
         \else
           Professional Master of \cust@speciality@en
