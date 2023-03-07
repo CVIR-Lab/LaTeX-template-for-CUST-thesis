@@ -1903,8 +1903,7 @@
     \parbox[t][0.5cm][t]{\textwidth}{%
       \raggedleft\heiti\fontsize{12bp}{12bp}\selectfont
       \textsf{学号：}\cust@underline[3cm]{\cust@student@id}
-      %密级
-      \null\cust@secret@level\par}\par
+      }\par
     \vskip 2.5cm%
     \includegraphics[height=3.1499cm]{figures/cust-name.pdf}\par
     \vskip 3.8866cm%bp:磅 此为图片和论文类型间距。
@@ -1959,7 +1958,7 @@
       \raggedright\heiti\fontsize{12bp}{22bp}\selectfont
       \textsf{中图分类号：}\cust@underline[2cm]{}
       \hspace{0.5\textwidth}
-      \textsf{密级：}\cust@underline[2cm]{}\\
+      \textsf{密级：}\cust@underline[2cm]{\cust@secret@level}\\
       \textsf{UDC：}\cust@underline[3.28cm]{}
       \hspace{0.5\textwidth}
       \textsf{编号：}\cust@underline[2cm]{}
@@ -2073,8 +2072,7 @@ for the degree of \par
     \parbox[t][0.6cm][t]{\textwidth}{%
       \raggedright\heiti\fontsize{12bp}{12bp}\selectfont
       \textsf{编号}\cust@underline[2cm]{}\par
-      %密级
-      \null\cust@secret@level\par}\par
+      }\par
     \vskip 0.5cm%
     \includegraphics[height=3.1496cm]{figures/cust-name.pdf}\par
     \vskip 2.3866cm%bp:磅 此为图片和论文类型间距。
@@ -2197,8 +2195,8 @@ for the degree of \par
       \cust@checkbox{} 本论文非涉密论文\par
       $\square$ 本论文属于涉密论文，在\cust@underline[1.5cm]{}年解密后使用本授权书。\par
     \else
-      $\square$ 公开\quad
-      \cust@checkbox{} 控阅（\cust@underline[0.8cm]{\cust@secret@year}年）\par
+      $\square$ 本论文非涉密论文\par
+      \cust@checkbox{} 本论文属于涉密论文，在\cust@underline[1.5cm]{\cust@secret@year}年解密后使用本授权书。\par
     \fi
     \vskip 0.2cm%
     作者签名：\cust@underline{}\hspace{2.7cm}%
