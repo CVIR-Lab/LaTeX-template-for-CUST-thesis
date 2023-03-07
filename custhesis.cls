@@ -1686,6 +1686,9 @@
   date = {
     default = {\the\year-\two@digits{\month}-\two@digits{\day}},
   },
+  start-date ={
+    name = start@date
+  },
   professional-type = {
     name = professional@type,
   },
@@ -1979,7 +1982,7 @@
              \makebox[5em][s]{研究生姓名}:&\underline{\makebox[13em][c]{\cust@author}}\\
              \makebox[6em][s]{指导教师姓名}:&\underline{\makebox[13em][c]{\cust@supervisor@names}}\\
              \makebox[6em][s]{企业行业导师}:&\underline{\makebox[13em][c]{\cust@department}}\\
-             \makebox[6em][s]{论文起止时间}:&\underline{\makebox[13em][c]{\cust@date@zh@short~\cust@date@zh@short}}\\
+             \makebox[6em][s]{论文起止时间}:&\underline{\makebox[13em][c]{\cust@start@date $\sim$ \cust@date@zh@short}}\\
          \end{tabular}
     \else
        \heiti\fontsize{14bp}{31bp}\selectfont
@@ -1990,7 +1993,7 @@
              \makebox[6em][s]{申请学位级别}:&\underline{\makebox[13em][c]{\cust@thesis@level}}\\
              \makebox[5em][s]{研究生姓名}:&\underline{\makebox[13em][c]{\cust@author}}\\
              \makebox[6em][s]{指导教师姓名}:&\underline{\makebox[13em][c]{\cust@supervisor@names}}\\
-             \makebox[6em][s]{论文起止时间}:&\underline{\makebox[13em][c]{\cust@date@zh@short$~$\cust@date@zh@short}}\\
+             \makebox[6em][s]{论文起止时间}:&\underline{\makebox[13em][c]{\cust@start@date $\sim$ \cust@date@zh@short}}\\
          \end{tabular} 
     \fi
     \vskip 1.0cm
