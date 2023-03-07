@@ -2596,19 +2596,19 @@ for the degree of \par
 
 % 《规范》中要求符号说明另页起，标题字体字号等同论文正文。
 \newenvironment{notation}{%
-  \ifcust@degree@graduate
+%  \ifcust@degree@graduate
     \cleardoublepage
     \pagenumbering{Roman}
-%    \pagestyle{headings}%没有页脚
+%%    \pagestyle{headings}%没有页脚
     \pagestyle{plain}
-  \fi
+%  \fi
   \cust@chapter{\cust@notation@name}%
 }{%
-  \ifcust@degree@graduate
+%  \ifcust@degree@graduate
     \clearpage
     \pagenumbering{Roman}
     \pagestyle{plain}%
-  \fi
+%  \fi
 }%
 \newcommand*\notationlabel[1]{#1\hfil}%
 \newenvironment{notationlist}[1]{%
