@@ -1610,7 +1610,7 @@
 % 《规范》要求，从摘要开始编页码，
 % 而且中英文摘要，目录均独立编页码
 \renewcommand\frontmatter{%
-  \cleardoublepage
+  \cleardoublepage%生成空白页
   \@mainmatterfalse
   \pagenumbering{Roman}%
   \pagestyle{plain}%
