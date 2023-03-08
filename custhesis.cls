@@ -1,5 +1,5 @@
 %
-% Copyright (C) 2015-2022 by CVIR lab of CUST <http://www.cvirlab.com/>
+% Copyright (C) 2023 by CVIR lab of CUST <http://www.cvirlab.com/>
 %
 % This file may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3c
@@ -365,27 +365,6 @@
 % 设置默认 \option{openany}。
 \DeclareBoolOption[false]{openright}
 \DeclareComplementaryOption{openany}{openright}
-
-% 兼容旧版本的文档类选项。
-% Reserved for compatibility until 2020-07-01.
-\DeclareVoidOption{doctor}{\custsetup{degree=doctor}}
-\DeclareVoidOption{master}{\custsetup{degree=master}}
-\DeclareVoidOption{bachelor}{\custsetup{degree=bachelor}}
-\DeclareVoidOption{chinese}{\custsetup{language=chinese}}
-\DeclareVoidOption{english}{\custsetup{language=english}}
-\DeclareVoidOption{academic}{\custsetup{degree-type=academic}}
-\DeclareVoidOption{professional}{\custsetup{degree-type=professional}}
-\DeclareVoidOption{science}{\custsetup{degree-area=science}}
-\DeclareVoidOption{engineering}{\custsetup{degree-area=engineering}}
-\DeclareVoidOption{print}{\custsetup{output=print}}
-\DeclareVoidOption{pdf}{\custsetup{output=electronic}}
-\newif\ifcust@legacy@cite@style
-\DeclareVoidOption{super}{\custsetup{cite-style=super}\cust@legacy@cite@styletrue}
-\DeclareVoidOption{numbers}{\custsetup{cite-style=inline}\cust@legacy@cite@styletrue}
-\DeclareVoidOption{authoryear}{\custsetup{cite-style=authoryear}\cust@legacy@cite@styletrue}
-\DeclareVoidOption{arabic}{\custsetup{section-style=arabic}}
-\DeclareVoidOption{colorlogo}{\custsetup{badge-color=blue}}
-\DeclareVoidOption{bwlogo}{\custsetup{badge-color=black}}
 
 % 载入 \cls{ctexbook}。
 \DeclareDefaultOption{\PassOptionsToClass{\CurrentOption}{ctexbook}}
@@ -3173,8 +3152,9 @@ for the degree of \par
     \null\par
     \begingroup
       \raggedleft
-      计算机视觉与智能机器人学实验室(\cust@author)，\par %如果致谢部分不需要落款名字，可以注释掉
-      校光电测试分析中心\par%如果致谢部分不需要落款名字，可以注释掉
+      \href{https://www.cvirlab.com}
+      {校光电测试分析中心CVIR实验室}\par%如果致谢部分不需要落款名字，可以注释掉
+%      \cust@author\par %如果致谢部分不需要落款名字，可以注释掉
       \cust@date@zh@short\par  %如果致谢部分不需要添加时间，可以注释掉
     \endgroup
 %  \fi
