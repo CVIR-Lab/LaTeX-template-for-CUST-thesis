@@ -2483,6 +2483,7 @@ for the degree of \par
 
 % 《规范》要求目录独立采用罗马数字编页码，所以必须另页起。包括正文章节（一般到三级标题）、参考文献、附录、致谢及各部分序号、名称、页码。
 \renewcommand\tableofcontents{%
+  \clearpage% 
   \pagenumbering{Roman}%
   \pagestyle{plain}%
   \cust@chapter{\contentsname}%
@@ -2577,16 +2578,18 @@ for the degree of \par
 \cust@set@lof@format
 \cust@option@hook{main-language}{\cust@set@lof@format}
 \renewcommand\listoffigures{%
-  \ifcust@degree@graduate
+%  \ifcust@degree@graduate
     \cleardoublepage
-  \fi
+    \pagenumbering{Roman}
+%  \fi
   \cust@chapter{\listfigurename}%
   \@starttoc{lof}%
 }
 \renewcommand\listoftables{%
-  \ifcust@degree@graduate
+%  \ifcust@degree@graduate
     \cleardoublepage
-  \fi
+    \pagenumbering{Roman}
+%  \fi
   \cust@chapter{\listtablename}%
   \@starttoc{lot}%
 }
