@@ -18,6 +18,6 @@ https://github.com/CVIR-Lab/LaTeX-template-for-CUST-thesis
 ### Overleaf
 首先注册[overleaf](https://www.overleaf.com?r=29a7c6d3&rm=d&rs=b)。Overleaf支持项目上传，也可以使用模板。具体如下
 1. 上传模板。将项目clone到本地，然后上传到个人overleaf中，而后进行编辑。
-2. 在线模板。暂未上传，待字体、字号、字间距等细节修改优化结束后再上传。
+2. 在线模板。在overleaf templates 中搜索“LaTeX template for CUST thesis”，然后选择open as template即可。
 
-本项目会持续更新，因此建议将项目clone到本地，再上传overleaf，而不是采用overleaf Templates形式。
+长春理工大学学位论文LateX模板（非官方）会持续更新，最新版本请fork本项目，感谢关注。
