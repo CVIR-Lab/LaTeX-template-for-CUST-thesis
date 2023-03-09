@@ -1907,12 +1907,12 @@
       \begin{tabular}{@{}l@{\hspace{\ccwd}}l@{}}%
         \textsf{研\hspace{0.7cm}究\hspace{0.7cm}生：} & \cust@author \\
         \textsf{\cust@speciality@name：} & \cust@speciality \\
-        \ifx\cust@advisor\@empty
+%        \ifx\cust@advisor\@empty
           \textsf{指\hspace{0.3cm}导\hspace{0.3cm}教\hspace{0.3cm}师：} & \cust@supervisor@names \\
-        \else
-          \textsf{校内导师：} & \cust@supervisor@names \\
-          \textsf{企业行业导师：} & \cust@advisor@names \\
-        \fi
+%        \else
+%          \textsf{校内导师：} & \cust@supervisor@names \\
+%          \textsf{企业行业导师：} & \cust@advisor@names \\
+%        \fi
       \end{tabular}\par%
       \vskip 1.0cm
     \bfseries\fontsize{16bp}{31bp}\selectfont
@@ -1952,7 +1952,7 @@
              \makebox[6em][s]{申请学位级别}:&\underline{\makebox[13em][c]{\cust@thesis@level}}\\
              \makebox[5em][s]{研究生姓名}:&\underline{\makebox[13em][c]{\cust@author}}\\
              \makebox[6em][s]{指导教师姓名}:&\underline{\makebox[13em][c]{\cust@supervisor@names}}\\
-             \makebox[6em][s]{企业行业导师}:&\underline{\makebox[13em][c]{\cust@department}}\\
+             \makebox[6em][s]{企业行业导师}:&\underline{\makebox[13em][c]{\cust@advisor@names}}\\
              \makebox[6em][s]{论文起止时间}:&\underline{\makebox[13em][c]{\cust@start@date $\sim$ \cust@date@zh@short}}\\
          \end{tabular}
     \else
@@ -2023,10 +2023,10 @@ for the degree of \par
     {\fontsize{16bp}{30bp}\selectfont
       \begin{tabular}{@{}c@{}}%
         \cust@supervisor@en@line \\
-        \ifx\cust@advisor\@empty
-        \else
-          \cust@advisor@en@line \\
-        \fi
+%        \ifx\cust@advisor\@empty
+%        \else
+%          \cust@advisor@en@line \\
+%        \fi
         \cust@date@en@short
       \end{tabular}\par}%
   \end{titlepage}%
