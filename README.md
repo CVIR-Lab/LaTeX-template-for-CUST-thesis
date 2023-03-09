@@ -24,4 +24,5 @@ https://github.com/CVIR-Lab/LaTeX-template-for-CUST-thesis
 
 长春理工大学学位论文LateX模板（非官方）会持续更新，最新版本请fork本项目，感谢关注。
 
-## CAUTION:由于模板直接生成PDF文档，不确定是否满足论文查重规定的文档格式要求，项目不对此负责。
+## CAUTION:
+由于模板直接生成PDF文档，不确定是否满足论文查重规定的文档格式要求，项目不对此负责。
