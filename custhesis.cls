@@ -1873,13 +1873,13 @@
     \cust@pdfbookmark{封面}%
     \centering
     \parbox[t][0.5cm][t]{\textwidth}{%
-      \raggedleft\heiti\fontsize{12bp}{12bp}\selectfont
+      \raggedleft\sffamily\fontsize{12bp}{12bp}\selectfont
       \textsf{学号：}\cust@underline[3cm]{\cust@student@id}
       }\par
     \vskip 2.5cm%
     \includegraphics[height=3.1499cm]{figures/cust-name.pdf}\par
     \vskip 3.8866cm%bp:磅 此为图片和论文类型间距。
-    {\sffamily\songti\fontsize{44bp}{21bp}\selectfont
+    {\rmfamily\fontsize{44bp}{21bp}\selectfont
       \cust@thesis@name}%\sffamily为无衬线字体
     \ifcust@degree@type@academic
       \vskip 0.1533cm%此为论文类型与论文题目间距
@@ -1899,11 +1899,11 @@
 %    \vskip 0.4cm%
     %论文题目盒子，宽度为\textwidth
     \parbox[t][5.5cm][c]{\textwidth}{%
-      \centering\sffamily\heiti\bfseries\fontsize{22bp}{30bp}\selectfont
+      \centering\sffamily\bfseries\fontsize{22bp}{30bp}\selectfont
       \cust@title\par}
 %    \vskip 0.2cm%
     %作者信息
-    \heiti\bfseries\fontsize{16bp}{30bp}\selectfont
+    \sffamily\bfseries\fontsize{16bp}{30bp}\selectfont
       \begin{tabular}{@{}l@{\hspace{\ccwd}}l@{}}%
         \textsf{研\hspace{0.7cm}究\hspace{0.7cm}生：} & \cust@author \\
         \textsf{\cust@speciality@name：} & \cust@speciality \\
@@ -1927,7 +1927,7 @@
     \cust@pdfbookmark{封面}%
     \centering
     \parbox[t][0.6cm][t]{\textwidth}{%
-      \raggedright\heiti\fontsize{12bp}{22bp}\selectfont
+      \raggedright\sffamily\fontsize{12bp}{22bp}\selectfont
       \textsf{中图分类号：}\cust@underline[2cm]{}
       \hspace{0.5\textwidth}
       \textsf{密级：}\cust@underline[2cm]{\cust@secret@level}\\
@@ -1939,12 +1939,12 @@
     \vskip 2.5cm%
     %论文题目，宽度为\textwidth
     \parbox[t][5.5cm][c]{\textwidth}{%
-      \centering\sffamily\heiti\bfseries\fontsize{22bp}{35bp}\selectfont
+      \centering\sffamily\bfseries\fontsize{22bp}{35bp}\selectfont
       \cust@title\par}
     \vskip 0.1cm%
     %作者信息
     \ifcust@degree@type@professional
-       \heiti\fontsize{14bp}{31bp}\selectfont
+       \sffamily\fontsize{14bp}{31bp}\selectfont
          \begin{tabular}{l@{~~}c}
              \makebox[9em][s]{学位授予单位及代码}:&\underline{\makebox[13em][c]{长春理工大学（10186）}}\\
              \makebox[9em][s]{类别领域名称及代码}:&\underline{\makebox[13em][c]{\cust@speciality}}\\
@@ -1956,7 +1956,7 @@
              \makebox[6em][s]{论文起止时间}:&\underline{\makebox[13em][c]{\cust@start@date $\sim$ \cust@date@zh@short}}\\
          \end{tabular}
     \else
-       \heiti\fontsize{14bp}{31bp}\selectfont
+       \sffamily\fontsize{14bp}{31bp}\selectfont
          \begin{tabular}{l@{~~}c}
              \makebox[9em][s]{学位授予单位及代码}:&\underline{\makebox[13em][c]{长春理工大学（10186）}}\\
              \makebox[7em][s]{学科专业及代码}:&\underline{\makebox[13em][c]{\cust@speciality}}\\
@@ -2042,13 +2042,13 @@ for the degree of \par
     \cust@pdfbookmark{封面}%
     \centering
     \parbox[t][0.6cm][t]{\textwidth}{%
-      \raggedright\heiti\fontsize{12bp}{12bp}\selectfont
+      \raggedright\sffamily\fontsize{12bp}{12bp}\selectfont
       \textsf{编号}\cust@underline[2cm]{}\par
       }\par
     \vskip 0.5cm%
     \includegraphics[height=3.1496cm]{figures/cust-name.pdf}\par
     \vskip 2.3866cm%bp:磅 此为图片和论文类型间距。
-    {\sffamily\heiti\fontsize{26bp}{21bp}\selectfont
+    {\sffamily\fontsize{26bp}{21bp}\selectfont
       \cust@thesis@name}%\sffamily为无衬线字体
     \ifcust@degree@type@academic
       \vskip 0.1533cm%此为论文类型与论文题目间距
@@ -2063,7 +2063,7 @@ for the degree of \par
       \cust@title@en}
     \vskip 0.1cm%
     %作者信息
-    {\heiti\fontsize{16bp}{31bp}\selectfont
+    {\sffamily\fontsize{16bp}{31bp}\selectfont
     \begin{tabular}{c@{~~}c}
         \makebox[4em][s]{学生姓名}:&\underline{\makebox[13em][c]{\cust@author}}\\
         \makebox[4em][s]{专业}:&\underline{\makebox[13em][c]{\cust@speciality}}\\
@@ -2242,7 +2242,7 @@ for the degree of \par
 % 另外 \pkg{ctex} v2.2 前的beforeskip的符号有特殊意义。
 \ctexset{
   chapter = {
-    format      = \centering\sffamily\songti\bfseries\fontsize{16bp}{26.67bp}\selectfont,
+    format      = \centering\rmfamily\bfseries\fontsize{16bp}{26.67bp}\selectfont,
     nameformat  = {},
     titleformat = \cust@spacetitle,
     number      = \thechapter,
@@ -2257,7 +2257,7 @@ for the degree of \par
 % 序号与题名间空一字。
 \ctexset{
   section = {
-    format     = \sffamily\songti\bfseries\fontsize{14bp}{23.33bp}\selectfont,
+    format     = \rmfamily\bfseries\fontsize{14bp}{23.33bp}\selectfont,
     aftername  = \hspace{\ccwd},
     indent     = 2\ccwd,
     beforeskip = 24bp,
@@ -2267,7 +2267,7 @@ for the degree of \par
 % 各章2级节标题：宋体小四号即 12磅，加粗，左缩进两字，单倍行距，段前 12 磅，段后 6 磅，
   % 序号与题名间空一字。
   subsection = {
-    format     = \sffamily\songti\bfseries\fontsize{12bp}{21.67bp}\selectfont,
+    format     = \rmfamily\bfseries\fontsize{12bp}{21.67bp}\selectfont,
     aftername  = \hspace{\ccwd},
     indent     = 2\ccwd,
     beforeskip = 12bp,
@@ -2276,7 +2276,7 @@ for the degree of \par
 % 各章3级节标题：宋体小四号即 12磅，加粗，左缩进两字，单倍行距，段前 12 磅，段后 6 磅，
   % 序号与题名间空一字。
   subsubsection = {
-    format     = \sffamily\songti\bfseries\fontsize{12bp}{20bp}\selectfont,
+    format     = \rmfamily\bfseries\fontsize{12bp}{20bp}\selectfont,
 %    number     = \arabic{subsubsection},
     aftername  = .\hspace{0.5\ccwd},
     indent     = 2\ccwd,
@@ -2286,7 +2286,7 @@ for the degree of \par
   %
 %4级节标题的格式使用宋体小四号即12磅加粗，左缩进两字，行距 20 磅，段前段后 0 磅，序号与题名间空半字宽。
   paragraph = {
-    format     = \rmfamily\songti\fontsize{12bp}{20bp}\selectfont,
+    format     = \rmfamily\fontsize{12bp}{20bp}\selectfont,
     number     = \arabic{paragraph}）, 
     aftername  = \hspace{0.5\ccwd},
     indent     = 2\ccwd,
@@ -2297,7 +2297,7 @@ for the degree of \par
 % 按照 Word 模板的格式，五级节标题：宋体 12 磅，左缩进两字，行距 20 磅，
   % 段前段后 0 磅，序号使用全宽括号，与题名间空半字宽。
   subparagraph = {
-    format     = \rmfamily\songti\fontsize{12bp}{20bp}\selectfont,
+    format     = \rmfamily\fontsize{12bp}{20bp}\selectfont,
     number     = (\arabic{paragraph}),
     aftername  = \hspace{0.5\ccwd},
     indent     = 2\ccwd,
@@ -2343,7 +2343,7 @@ for the degree of \par
   % 正文中的标题分章、节、段三级；章标题居中，节、段标题居左缩进两字符，分别用三号（16 bp）宋体、四号（14 bp）宋体和小四号宋体（12bp）均加粗。
     chapter = {
       format = {
-        \centering\sffamily\songti\bfseries
+        \centering\rmfamily\bfseries
         \if@mainmatter
           \fontsize{16bp}{26.67bp}\selectfont
         \else
@@ -2352,23 +2352,23 @@ for the degree of \par
       },
     },
     section = {
-      format = \sffamily\songti\bfseries\fontsize{14bp}{22.33bp}\selectfont,
+      format = \rmfamily\bfseries\fontsize{14bp}{22.33bp}\selectfont,
       indent     = 2\ccwd,%缩进2字符
       beforeskip = 24bp,%段前24磅
       afterskip  = 6bp,%段前6磅
     },
     subsection = {
-      format    = \sffamily\songti\bfseries\fontsize{12bp}{22.33bp}\selectfont,
+      format    = \rmfamily\bfseries\fontsize{12bp}{22.33bp}\selectfont,
       indent     = 2\ccwd,
       beforeskip = 24bp,
       afterskip  = 6bp,
     },
     subsubsection = {
-      format    = \rmfamily\songti\bfseries\fontsize{12bp}{22bp}\selectfont,
+      format    = \rmfamily\bfseries\fontsize{12bp}{22bp}\selectfont,
       indent    = 2\ccwd,
     },
     paragraph = {
-      format    = \rmfamily\songti\bfseries\fontsize{12bp}{22bp}\selectfont,
+      format    = \rmfamily\bfseries\fontsize{12bp}{22bp}\selectfont,
       aftername = {},
       indent    = 2\ccwd,
     },
@@ -2721,9 +2721,9 @@ for the degree of \par
 
 \DeclareCaptionFont{cust}{%
   \ifcust@language@chinese
-    \songti\fontsize{10.5bp}{13.65bp}\selectfont
+    \fontsize{10.5bp}{13.65bp}\selectfont
   \else
-    \songti\fontsize{10.5bp}{12.075bp}\selectfont
+    \fontsize{10.5bp}{12.075bp}\selectfont
   \fi
 }
 
