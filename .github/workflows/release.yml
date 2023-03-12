@@ -1,7 +1,12 @@
 # .github/workflows/release.yml
+
 name: Release
-permissions: contents: write 
-push:
+
+permissions:
+  contents: write
+
+on:
+  push:
     tags:
       - 'v*'
 
