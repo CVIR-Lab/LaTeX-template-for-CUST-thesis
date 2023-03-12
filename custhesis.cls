@@ -11,7 +11,7 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}[2017/04/15]
-\newcommand\custhesisversion{v1.0.0}%
+\newcommand\custhesisversion{v1.0.4}%
 \ProvidesClass{custhesis}[2023/02/15 {\custhesisversion} CUST thesis template]
 
 % 报错和警告
