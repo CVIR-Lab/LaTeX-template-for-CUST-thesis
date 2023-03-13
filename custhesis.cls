@@ -1510,7 +1510,7 @@
 % 页面设置：上3.5cm、下 2.5 cm，左、右 2.7 cm，页眉 2.5 cm，页脚 1.8 cm。
 
 % 注意这里指的是页眉顶部到纸张顶部的距离为 2.5 cm，
-% 3.5-headheight-headsep=3.5-0.75-0.25 =2.5cm
+% 3.5-headheight-headsep=3.5-2.5-0.2 =0.8cm
 % 注意这里指的是页脚底部部到纸张底部的距离为 1.8 cm
 % 2.5-footskip=2.5-0.7=1.8cm
 %vmargin    = 2.5cm,
@@ -1519,8 +1519,8 @@
   top        = 3.5cm,
   bottom     = 2.5cm,
   hmargin    = 2.7cm,
-  headheight = 0.75cm,
-  headsep    = 0.25cm,
+  headheight = 2.5cm,
+  headsep    = 0.1cm,
   footskip   = 0.7cm,
 }
 
@@ -1528,8 +1528,14 @@
 % \cs{sectionmark}。
 \pagestyle{fancy}
 \let\sectionmark\@gobble
-\renewcommand\headrulewidth{0.4\p@}
-
+\ifcust@degree@bachelor
+  \renewcommand\headrulewidth{0.4\p@}
+\else
+  \renewcommand\headrule{%
+  \makebox[0pt][l]{\rule[0.45\baselineskip]{\headwidth}{0.4\p@}}%
+  \rule[0.5\baselineskip]{\headwidth}{2\p@}
+}
+\fi
 % 重定义默认的 |plain| page style，会显示页眉和页脚。
 \fancypagestyle{plain}{%
   \fancyhf{}%
@@ -1538,7 +1544,13 @@
   % 页码：宋体 10.5 磅、页面下脚居中。
   \ifcust@degree@graduate
     \def\cust@hf@font{\fontsize{10.5bp}{12bp}\selectfont}
+    \ifcust@degree@master
     \fancyhead[C]{\cust@hf@font\leftmark}%
+    \else
+    % 根据《研究生规范》要求，博士论文奇偶页的页眉不同。
+    \fancyhead[CE]{\cust@hf@font 长春理工大学博士学位（毕业）论文}%偶数页眉
+    \fancyhead[CO]{\cust@hf@font\leftmark}%奇数页眉为各章标题 
+    \fi
     \fancyfoot[C]{\cust@hf@font\thepage}%
     \let\@mkboth\markboth
     \def\chaptermark##1{%
