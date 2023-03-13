@@ -1,4 +1,12 @@
 # 长春理工大学学位论文LateX模板（非官方）
+![GitHub](https://img.shields.io/github/license/cvir-lab/LaTeX-template-for-CUST-thesis)
+
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cvir-lab/LaTeX-template-for-CUST-thesis?include_prereleases)
+
+![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/cvir-lab/LaTeX-template-for-CUST-thesis/v1.0.1?include_prereleases)
+
+![GitHub all releases](https://img.shields.io/github/downloads/cvir-lab/LaTeX-template-for-CUST-thesis/total)
+
 ## 简介
 本项目为长春理工大学学位论文的非官方LaTeX 模板，包含本科生、硕士生与博士生模板。参考[中国科学技术大学](https://github.com/ustctug/ustcthesis);以及[哈尔滨工业大学深圳](https://github.com/YangLaTeX/hitszthesis)等开源LaTex模板。
 
