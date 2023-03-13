@@ -26,7 +26,7 @@ https://github.com/CVIR-Lab/LaTeX-template-for-CUST-thesis
 
 此外，实验室也制作了开题、中期等汇报[Beamer模板](https://www.overleaf.com/latex/templates/cust-beamer-theme/xbsjwcjhnmds),或者在Overleaf templates 中搜索“CUST Beamer Theme”，然后选择open as template即可。
 
-长春理工大学学位论文LateX模板（非官方）会持续更新，最新版本请fork本项目，感谢关注。
+Overleaf在线模板更新较慢，推荐大家采用上传模板的方式。本项目会持续更新，请fork项目以获取最新版本，感谢关注。
 
 ## CAUTION:
 由于模板直接生成PDF文档，不确定是否满足论文查重规定的文档格式要求，项目不对此负责。
