@@ -1,10 +1,7 @@
 # 长春理工大学学位论文LateX模板（非官方）
 ![GitHub](https://img.shields.io/github/license/cvir-lab/LaTeX-template-for-CUST-thesis)
-
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/cvir-lab/LaTeX-template-for-CUST-thesis?include_prereleases)
-
 ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/cvir-lab/LaTeX-template-for-CUST-thesis/v1.0.1?include_prereleases)
-
 ![GitHub all releases](https://img.shields.io/github/downloads/cvir-lab/LaTeX-template-for-CUST-thesis/total)
 
 ## 简介
