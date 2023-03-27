@@ -22,7 +22,7 @@ https://github.com/CVIR-Lab/LaTeX-template-for-CUST-thesis
 ### Overleaf
 首先注册[Overleaf](https://www.overleaf.com?r=29a7c6d3&rm=d&rs=b)。Overleaf支持项目上传，也可以使用模板。具体如下
 1. 上传模板。将项目clone到本地，然后上传到个人overleaf中，而后进行编辑。
-2. [Overleaf 在线模版](https://www.overleaf.com/latex/templates/latex-template-for-cust-thesis/krtxggvncvcq)。或者在Overleaf templates 中搜索“LaTeX template for CUST thesis”，然后选择Open as Template即可。
+2. Overleaf 在线模版。在Overleaf templates 中搜索“LaTeX template for CUST thesis”，然后选择Open as Template即可。
 
 此外，实验室也制作了开题、中期等汇报[Beamer模板](https://www.overleaf.com/latex/templates/cust-beamer-theme/xbsjwcjhnmds),或者在Overleaf templates 中搜索“CUST Beamer Theme”，然后选择open as template即可。
 
