@@ -1836,7 +1836,7 @@
       \providecommand\lishu{\sffamily}
     \fi
   \fi
-  \newcommand\cust@speciality@name{类\hpace{0.3cm}别\hspace{0.3cm}领\hspace{0.3cm}域}
+  \newcommand\cust@speciality@name{类\hspace{0.3cm}别\hspace{0.3cm}领\hspace{0.3cm}域}
 \fi
 %定义原创性声明文字中的硕士、博士层次等常量。
 \ifcust@degree@doctor
